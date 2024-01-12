@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+</head>
+
+<body>
+    <header class="bg-white">
+        <div class="header-wrapper mx-5 ">
+            <div class="grid grid-cols-12 mx-auto flex items-center justify-between pt-3 pb-3">
+                <div class="user-profil flex col-span-2">
+                    <div class="user-profil-image">
+                        <img src="./assets/img/user.png" class="rounded-full" alt="">
+                    </div>
+                    <div class="user-profil-name px-4 flex items-center justify-center font-bold text-lg">
+                        Jane S.
+                    </div>
+                    <div class="user-profil-detail pl-14 flex items-center justify-center">
+                        <img src="./assets/img/icon/arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="search-area-wrapper flex col-span-8">
+                    <img src="./assets/img/icon/search.svg" class="ml-4" alt="">
+                    <input class="focus:outline-none ml-2" type="text" placeholder="Quick search">
+                </div>
+                <div class="notification-wrapper col-span-2 flex justify-end">
+                    <img src="./assets/img/icon/notifications.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class=" flex grid grid-cols-12 mx-5 py-5">
+            <div class="menu-wrapper bg-white col-span-2 rounded-lg p-5 px-5">
+                <a href="#?">
+                    <div class="menu-wrapper-image flex gap-4 py-2 px-5">
+                        <img src="./assets/img/icon/dashboard.svg" class="w-6 h-6" alt="">
+                        <span>Dashboard</span>
+                    </div>
+                </a>
+                <a href="#?">
+                    <div class="menu-wrapper-image flex gap-4 py-2 px-5 my-2">
+                        <img src="./assets/img/icon/people.svg" class="w-6 h-6" alt="">
+                        <span>People</span>
+                    </div>
+                </a>
+                <a href="#?">
+                    <div class="menu-wrapper-image flex gap-4 py-2 px-5">
+                        <img src="./assets/img/icon/calendar.svg" class="w-6 h-6" alt="">
+                        <span>Calendar</span>
+                    </div>
+                </a>
+                <a href="#?">
+                    <div class="menu-wrapper-image flex gap-4 py-2 px-5 my-2">
+                        <img src="./assets/img/icon/training.svg" class="w-6 h-6" alt="">
+                        <span>Training</span>
+                    </div>
+                </a>
+                <a href="#?">
+                    <div class="menu-wrapper-image flex gap-4 py-2 px-5">
+                        <img src="./assets/img/icon/time.svg" class="w-6 h-6" alt="">
+                        <span>Timesheet</span>
+                    </div>
+                </a>
+                <a href="#?">
+                    <div class="menu-wrapper-image flex gap-4 py-2 px-5 my-2">
+                        <img src="./assets/img/icon/report.svg" class="w-6 h-6" alt="">
+                        <span>Reports</span>
+                    </div>
+                </a>
+                <a href="#?">
+                    <div class="menu-wrapper-image flex gap-4 py-2 px-5">
+                        <img src="./assets/img/icon/admin.svg" class="w-6 h-6" alt="">
+                        <span>Administration</span>
+                    </div>
+                </a>
+                <a href="#?">
+                    <div class="menu-wrapper-image flex gap-4 py-2 px-5 my-2">
+                        <img src="./assets/img/icon/help.svg" class="w-6 h-6" alt="">
+                        <span>Help</span>
+                    </div>
+                </a>
+            </div>
+            <div class="graphic-area col-span-4 ml-5 bg-white rounded-lg">
+                <div class="font-bold text-lg ml-4 mt-4">
+                    Company Facts
+                </div>
+                <swiper-container class="mySwiper" pagination="true" navigation="true">
+                    <swiper-slide>
+                        <div class="ml-4 text-[#8E8E93]">Employees</div>
+                        <div id="" class="mb-12"></div>
+                    </swiper-slide>
+                    <swiper-slide>Slide 2</swiper-slide>
+                    <swiper-slide>Slide 3</swiper-slide>
+                </swiper-container>
+            </div>
+            <div class="graphic-area col-span-4 ml-5 bg-white rounded-lg">
+                <swiper-container class="mySwiper" pagination="true" navigation="true">
+                    <swiper-slide>
+                        <div class="font-bold text-lg p-4">Statistics</div>
+                        <div id="donutGraphic" class="mb-12"></div>
+                    </swiper-slide>
+                    <swiper-slide>Slide 2</swiper-slide>
+                    <swiper-slide>Slide 3</swiper-slide>
+                </swiper-container>
+            </div>
+            <div class="add-widget col-span-2 ml-5 text-white ">
+                <div class="add-widget-text rounded-full bg-[#27AE60] p-2 w-full flex items-center justify-center relative inline-block">
+                    <span class="text-2xl mx-2 pb-1">+</span> ADD WİDGET
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="flex grid grid-cols-12 mx-5 py-5">
+            <div class="version-wrapper bg-white col-span-2 rounded-lg h-24 p-4">
+                <div class="flex justify-center font-bold py-2">
+                    CAMIOCA
+                </div>
+                <span class="text-[#8E8E93] flex justify-center">Version: 1.0.0.11</span>
+            </div>
+            <div class="action-wrapper col-span-4 ml-5 bg-white rounded-lg p-4">
+                <span class="font-bold text-lg">
+                    Assigned Risks
+                </span>
+                <div class="flex items-center justify-center h-96">
+                    <span class="action-wrapper-text text-[#8E8E93]">There are no risks assigned.</span>
+                </div>
+            </div>
+            <div class="action-wrapper col-span-4 ml-5 bg-white rounded-lg p-4">
+                <span class="font-bold text-lg">
+                    Assigned Action Items
+                </span>
+                <div class="flex items-center justify-center h-96">
+                    <span class="action-wrapper-text text-[#8E8E93]">There are no action items assigned.</span>
+                </div>
+            </div>
+            <div class="col-span-2"></div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./assets/js/graphic.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+</body>
+
+</html>

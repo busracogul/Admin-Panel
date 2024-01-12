@@ -1,0 +1,19 @@
+body {
+    background-color: #E5E5E5;
+}
+
+.menu-wrapper {
+    a {
+        :hover {
+            &.menu-wrapper-image {
+                border-radius: 5px;
+                background-color: rgba(47, 129, 237, 0.3);
+                color: #2F80ED;
+
+                img {
+                    filter: invert(40%) sepia(97%) saturate(2017%) hue-rotate(199deg) brightness(96%) contrast(94%);
+                }
+            }
+        }
+    }
+}
