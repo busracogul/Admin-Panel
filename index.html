@@ -88,13 +88,11 @@
                 </a>
             </div>
             <div class="graphic-area col-span-4 ml-5 bg-white rounded-lg">
-                <div class="font-bold text-lg ml-4 mt-4">
-                    Company Facts
-                </div>
                 <swiper-container class="mySwiper" pagination="true" navigation="true">
                     <swiper-slide>
-                        <div class="ml-4 text-[#8E8E93]">Employees</div>
-                        <div id="" class="mb-12"></div>
+                        <div class="font-bold text-lg pl-4 pt-4">Company Facts</div>
+                        <div class="ml-4 text-[#8E8E93] mb-5">Employees</div>
+                        <div id="chartContainer" class="mb-8" style="padding-left: 50px; height: 300px; width: 80%;"></div>
                     </swiper-slide>
                     <swiper-slide>Slide 2</swiper-slide>
                     <swiper-slide>Slide 3</swiper-slide>
@@ -103,8 +101,8 @@
             <div class="graphic-area col-span-4 ml-5 bg-white rounded-lg">
                 <swiper-container class="mySwiper" pagination="true" navigation="true">
                     <swiper-slide>
-                        <div class="font-bold text-lg p-4">Statistics</div>
-                        <div id="donutGraphic" class="mb-12"></div>
+                        <div class="font-bold text-lg p-4 mb-3">Statistics</div>
+                        <div id="donutGraphic" class="mb-8"></div>
                     </swiper-slide>
                     <swiper-slide>Slide 2</swiper-slide>
                     <swiper-slide>Slide 3</swiper-slide>
@@ -119,12 +117,12 @@
     </section>
 
     <section>
-        <div class="flex grid grid-cols-12 mx-5 py-5">
-            <div class="version-wrapper bg-white col-span-2 rounded-lg h-24 p-4">
-                <div class="flex justify-center font-bold py-2">
-                    CAMIOCA
+        <div class="flex grid grid-cols-12  mx-5 py-5 justify-end">
+            <div class="col-span-2 flex flex-col justify-end">
+                <div class="version-wrapper bg-white rounded-lg p-5">
+                    <span class="font-bold flex justify-center mb-3">CAMIOCA</span>
+                    <span class="text-[#8E8E93] flex justify-center text-xs">Version: 1.0.0.11</span>
                 </div>
-                <span class="text-[#8E8E93] flex justify-center">Version: 1.0.0.11</span>
             </div>
             <div class="action-wrapper col-span-4 ml-5 bg-white rounded-lg p-4">
                 <span class="font-bold text-lg">
@@ -147,6 +145,7 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
     <script src="./assets/js/graphic.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
